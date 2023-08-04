@@ -1,6 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Xunit;
 
 namespace Xunit.Di.Ci.Tests.Acceptance
 {

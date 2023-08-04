@@ -1,10 +1,9 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using Xunit;
 
 namespace Xunit.Di.Ci.Tests.Acceptance
-{    
+{
     public class FixtureTests : IClassFixture<TextReaderFixture>
     {
         private readonly TextReaderFixture _textReader;

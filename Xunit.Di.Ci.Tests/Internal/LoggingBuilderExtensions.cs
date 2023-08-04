@@ -18,9 +18,9 @@ namespace Xunit.Di.Ci.Tests
             {
                 throw new ArgumentNullException(nameof(builder));
             }
- 
+
             builder.Services.TryAddEnumerable(ServiceDescriptor.Singleton<ILoggerProvider, FileLoggerProvider>());
- 
+
             return builder;
         }
     }

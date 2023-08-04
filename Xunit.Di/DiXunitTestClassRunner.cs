@@ -24,7 +24,7 @@ namespace Xunit.Di
             IDictionary<Type, object> collectionFixtureMappings)
             : base(testClass, @class, testCases, diagnosticMessageSink,
                 messageBus, testCaseOrderer, aggregator,
-                cancellationTokenSource, collectionFixtureMappings) => 
+                cancellationTokenSource, collectionFixtureMappings) =>
             _serviceScope = serviceScope;
 
         /// <inheritdoc />

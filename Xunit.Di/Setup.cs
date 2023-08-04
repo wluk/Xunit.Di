@@ -58,7 +58,7 @@ namespace Xunit.Di
             if (_built)
                 throw new InvalidOperationException("Build can only be called once.");
             _built = true;
-            
+
             Configure();
             BuildAppConfiguration();
             ConfigureServices();

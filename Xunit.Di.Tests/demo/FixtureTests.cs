@@ -28,12 +28,12 @@ namespace Xunit.Di.Tests
 
         public TextReaderFixture()
         {
-            Reader =  new StringReader(nameof(TextReaderFixture));
+            Reader = new StringReader(nameof(TextReaderFixture));
         }
 
-         public void Dispose()
-         {
-             Reader.Dispose();
-         }
+        public void Dispose()
+        {
+            Reader.Dispose();
+        }
     }
 }

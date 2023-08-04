@@ -18,13 +18,13 @@ namespace Xunit.Di.Ci.Tests.Acceptance
         {
             var value = await _textReader.Reader.ReadToEndAsync();
             Assert.NotNull(value);
-            Assert.Equal(TextReaderFixture.Message, value); 
-         } 
+            Assert.Equal(TextReaderFixture.Message, value);
+        }
     }
 
     [CollectionDefinition(TextReaderFixture.DefaultCollection)]
-    public class CollectionFixture : ICollectionFixture<TextReaderFixture>{}
-    
+    public class CollectionFixture : ICollectionFixture<TextReaderFixture> { }
+
     [Collection(TextReaderFixture.DefaultCollection)]
     public class CollectionMemberA
     {
@@ -41,8 +41,8 @@ namespace Xunit.Di.Ci.Tests.Acceptance
             int peeked = _textReader.Reader.Peek();
             Assert.Equal((int)TextReaderFixture.Message[0], peeked);
         }
-    }   
-    
+    }
+
     [Collection(TextReaderFixture.DefaultCollection)]
     public class CollectionMemberB
     {
@@ -69,12 +69,12 @@ namespace Xunit.Di.Ci.Tests.Acceptance
 
         public TextReaderFixture()
         {
-            Reader =  new StringReader(Message);
+            Reader = new StringReader(Message);
         }
 
-         public void Dispose()
-         {
-             Reader.Dispose();
-         }
+        public void Dispose()
+        {
+            Reader.Dispose();
+        }
     }
 }

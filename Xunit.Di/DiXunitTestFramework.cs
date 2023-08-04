@@ -17,7 +17,7 @@ namespace Xunit.Di
         }
 
         internal ExceptionAggregator Aggregator { get; set; } = new ExceptionAggregator();
-        
+
         /// <inheritdoc/>
         protected override ITestFrameworkExecutor CreateExecutor(AssemblyName assemblyName)
         {

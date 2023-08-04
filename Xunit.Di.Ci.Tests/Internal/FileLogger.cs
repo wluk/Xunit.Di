@@ -28,7 +28,7 @@ namespace Xunit.Di.Ci.Tests
             if (!IsEnabled(logLevel))
                 return;
 
-            if(formatter == null)
+            if (formatter == null)
             {
                 throw new ArgumentNullException(nameof(formatter));
             }

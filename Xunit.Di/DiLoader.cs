@@ -18,7 +18,7 @@ namespace Xunit.Di
             if (setupTypeAssembly == null)
                 throw new InvalidOperationException($"Could not load assembly '{setupTypeAtrAttribute.AssemblyName}'");
 
-            var setupType = setupTypeAssembly.GetType(setupTypeAtrAttribute.TypeName) 
+            var setupType = setupTypeAssembly.GetType(setupTypeAtrAttribute.TypeName)
                        ?? throw new InvalidOperationException($"Can't load type {setupTypeAtrAttribute.TypeName} in '{setupTypeAtrAttribute.AssemblyName}'");
 
             var property = setupType.GetProperties(BindingFlags.Instance | BindingFlags.Public)
